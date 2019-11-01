@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head class="page-header">
+  <head>
     <meta charset="utf-8">
     <title>Магазин|Дизайн-студия "Нердс"</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" scr="normalize.css">
+    <link rel="stylesheet" src="css/style.css">
   </head>
 <body>
 <header class="page-header">
   <nav class="site-navigation">
-    <a href="#" class="logo"><img src="img/svg-nerds/nerds-logo.svg" alt="logo1" width="100" height="50"></a>
-    <ul>
+    <a href="index.html" class="page-header-logo"><img src="img/svg-nerds/nerds-logo.svg" alt="logo1" width="100" height="50"></a>
+    <ul class="site-navigation-list">
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
-      <li><a href="shop.html">Магазин</a></li>
+      <li><a class="site-navigation-current">Магазин</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
-    <ul class="user-block">
+    <ul class="user-navigation-list">
       <li><a href="#">Корзина</a></li>
     </ul>
   </nav>
@@ -69,14 +72,14 @@
     <button type="submit">Показать</button>
   </form>
   <section class="catalog">
-    <section>
-      <h3>Сортировать</h3>
-      <ul>
+    <section class="sort">
+      <h3 class="sort-title">Сортировать</h3>
+      <ul class="sort-list-category">
         <li><a href="#">по цене</a></li>
         <li><a href="#">по типу</a></li>
         <li><a href="#">по названию</a></li>
       </ul>
-      <ul>
+      <ul class="sort-list-priority">
         <li><a href="#" aria-label="Сортировка по убыванию"></a></li>
         <li><a href="#" aria-label="Сортировка по возрастанию"></a></li>
       </ul>
@@ -108,8 +111,7 @@
       </div>
       <section class="catalog-popup">
         <h2 class="catalog-title"><a href="#">barbershop</a></h2>
-        <p class="catalog-text">Сайт салона красоты.</p>
-        <p class="catalog-text">Для мужчин, да.</p>
+        <p class="catalog-text">Сайт салона красоты. Для мужчин, да.</p>
         <a href="#" class="catalog-button">9900 руб.</a>
       </section>
     </li>
@@ -145,29 +147,29 @@
     </li>
   </ul>
   </section>
-  <section class="contacts">
-    <div>
-      <p>nerds design studio</p>
-      <address>191186, Санкт-Петербург,<br>
-      ул. Б. Конюшенная, д. 19/8</address>
-      <p>тел. <a href="tel:+78122757575">+7(812)275-75-75</a></p>
-      <button><a href="feedback.html">напишите нам</a></button>
-    </div>
-    <div>
-      <img src="img/map.png" alt="Карта">
-    </div>
-  </section>
 </main>
 <footer class="page-footer">
-  <ul class="social page-footer-social">
-    <li><a href="#" aria-label="Переход на страницу Нердса ВКонтакте">vk</a></li>
-    <li><a href="#" aria-label="Переход на страницу Нердса в Фейсбук">facebook</a></li>
-    <li><a href="#" aria-label="Переход на страницу Нердса в Инстаграм">Instagram</a></li>
-  </ul>
-  <section class="friends">
-    <h2 class="friends-title">Давайте дружить, это выгодно!</h2>
-    <p class="friend-text">Скидка 10% для друзей из социальных сетей.</p>
+  <section class="contacts-details">
+    <p>nerds design studio</p>
+    <address>191186, Санкт-Петербург,<br>
+    ул. Б. Конюшенная, д. 19/8</address>
+    <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
+    <a href="#">напишите нам</a>
   </section>
+  <div class="contacts-map">
+    <img src="img/map.png" alt="Карта" width="1440" height="416">
+  </div>
+  <div>
+    <ul class="social page-footer-social">
+      <li class="social-item"><a href="#">vk</a></li>
+      <li class="social-item"><a href="#">facebook</a></li>
+      <li class="social-item"><a href="#">Instagram</a></li>
+    </ul>
+    <section class="friends">
+      <h2 class="friends-title">Давайте дружить, это выгодно!</h2>
+      <p class="friends-text">Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </div>
 </footer>
 <section>
   <h2>Напишите нам</h2>
